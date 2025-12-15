@@ -1,0 +1,26 @@
+{
+  "name": "shortener",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx watch src/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@prisma/client": "^6.16.2",
+    "@types/express": "^5.0.6",
+    "dotenv": "^17.2.3",
+    "prisma": "^6.16.2"
+  },
+  "dependencies": {
+    "@types/node": "^24.10.1",
+    "express": "^5.2.1",
+    "nanoid": "^5.1.6",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}
