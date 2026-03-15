@@ -1,0 +1,24 @@
+name: Short Pipe
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  verify_code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check code
+        uses: actions/checkout@v4
+    
+      - name: Setup node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      
+      - name: Install dependencies
+        run: npm Install
+        working_directory: src
+
+    
