@@ -19,6 +19,4 @@ jobs:
       
       - name: Install dependencies
         run: npm Install
-        working_directory: src
-
-    
+        working-directory: src
